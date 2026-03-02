@@ -242,4 +242,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Publish draft release
-        run: gh release edit ${{ env.DEVICE }}-v${{ needs.get_build_date.outputs.build_date }} --draft=false
+        run: gh release edit v${{ needs.get_build_date.outputs.build_date }} --draft=false
